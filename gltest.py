@@ -120,6 +120,10 @@ class Game(object):
 			self.snake.tail = self.snake[0]
 
 		if isinstance(packet, list):
+			if len(self.lines) == 0:
+				"set the tail to be the size of the "
+				self.snake.add_node(self.snake.head.copy())
+				self.add_line(self.create_vertexlist(self.snake.head, self.snake.curr_node))
 			if isinstance(self.lines[0], pyglet.shapes.Rectangle):
 				print(packet)
 				self.lines[0].delete()

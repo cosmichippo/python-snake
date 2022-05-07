@@ -6,7 +6,7 @@ and only saving the vertices in a list which you can pop/add to
 
 TODO:
 
-currently, doeesn't work when the snake is one line long. add feature for that
+
 
 Add apples : P lol
 
